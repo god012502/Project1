@@ -33,8 +33,12 @@ public class Account {//Nomal, high 클래스의 부모
 		this.balance = balance;
 	}
 	//toString 
-		@Override
-		public String toString() {
-			return "Account [계좌번호=" + accNum + ", 이름 =" + name + ", 잔고=" + balance + "]";
-		}
+	@Override
+	public String toString() {
+		return "Account [계좌번호=" + accNum + ", 이름 =" + name + ", 잔고=" + balance + "]";
+	}
+	
+	public int plus(int money) {
+		return balance+money;
+	}
 }
